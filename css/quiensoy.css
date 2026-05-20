@@ -1,0 +1,658 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #a8dadc;
+    --highlight-color: #e63946;
+    --light-color: #f1faee;
+    --dark-color: #333;
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+    --radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: var(--dark-color);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-color), var(--highlight-color));
+    border-radius: 2px;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.center-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-section {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    background: linear-gradient(rgba(29, 53, 87, 0.8), rgba(29, 53, 87, 0.9)),
+                url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: var(--light-color);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: var(--accent-color);
+    font-weight: 300;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--light-color);
+    margin-bottom: 5px;
+}
+
+.stat-text {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* =========================
+   PRESENTATION SECTION
+========================= */
+.presentation-section {
+    padding: 80px 0;
+}
+
+.presentation-card {
+    display: flex;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.presentation-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.presentation-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.presentation-content {
+    flex: 1.5;
+    padding: 50px;
+}
+
+.presentation-text {
+    margin-bottom: 30px;
+}
+
+.highlight-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.signature {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid var(--accent-color);
+}
+
+.signature-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.signature-role {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+/* =========================
+   SERVICES SECTION
+========================= */
+.services-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.service-card.highlight {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.service-card.highlight .service-title,
+.service-card.highlight .service-list li,
+.service-card.highlight .objective-text,
+.service-card.highlight .commitment-text {
+    color: white;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.service-card.highlight .service-icon {
+    color: var(--light-color);
+}
+
+.service-title {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.service-list li i {
+    color: var(--accent-color);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.objective-content {
+    margin-top: 20px;
+}
+
+.objective-text {
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    position: relative;
+    padding: 0 20px;
+}
+
+.objective-text .fa-quote-left {
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.objective-text .fa-quote-right {
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+.commitment-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--highlight-color);
+}
+
+.commitment-text {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* =========================
+   VALUES SECTION
+========================= */
+.values-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.value-item {
+    text-align: center;
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.value-title {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.value-text {
+    color: var(--secondary-color);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* =========================
+   CTA SECTION
+========================= */
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.cta-text {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    min-width: 180px;
+    justify-content: center;
+}
+
+.cta-button.phone {
+    background-color: var(--highlight-color);
+    color: white;
+}
+
+.cta-button.email {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.cta-button.services {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.cta-button.phone:hover {
+    background-color: #c1121f;
+}
+
+.cta-button.email:hover {
+    background-color: #f8f9fa;
+}
+
+.cta-button.services:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+.whatsapp-fijo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: white;
+    padding: 18px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-fijo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .presentation-card {
+        flex-direction: column;
+    }
+    
+    .presentation-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-stats {
+        gap: 30px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .presentation-content {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 60vh;
+        min-height: 400px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-text {
+        font-size: 1.1rem;
+    }
+
+    .whatsapp-fijo {
+        bottom: 20px;
+        right: 20px;
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+    }
+
+    .highlight-text {
+        font-size: 1.05rem;
+        padding-left: 15px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+
+    .presentation-content {
+        padding: 22px 18px;
+    }
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content,
+.presentation-card,
+.service-card,
+.value-item,
+.cta-content {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.4s;
+}

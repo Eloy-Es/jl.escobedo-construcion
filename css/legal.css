@@ -1,0 +1,156 @@
+/* ===== ESTILOS PÁGINAS LEGALES ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Hero de la página legal */
+.legal-hero {
+    background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+    padding: 90px 20px 60px;
+    margin-top: 70px;
+    text-align: center;
+    color: white;
+}
+.legal-hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.legal-hero p {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    max-width: 650px;
+    margin: 0 auto;
+}
+.legal-hero .legal-date {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Contenido principal */
+.legal-content {
+    max-width: 900px;
+    margin: 50px auto 20px;
+    padding: 0 20px;
+}
+
+/* Secciones */
+.legal-section {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    border-left: 4px solid #a8dadc;
+}
+.legal-section h2 {
+    font-size: 1.5rem;
+    color: #1d3557;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.legal-section h2 i { color: #a8dadc; font-size: 1.3rem; }
+.legal-section h3 {
+    font-size: 1.1rem;
+    color: #457b9d;
+    margin: 20px 0 10px;
+    font-weight: 600;
+}
+.legal-section p {
+    color: #555;
+    margin-bottom: 14px;
+    line-height: 1.8;
+}
+.legal-section ul, .legal-section ol {
+    padding-left: 22px;
+    margin-bottom: 14px;
+}
+.legal-section li {
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.7;
+}
+.legal-section a { color: #457b9d; text-decoration: none; }
+.legal-section a:hover { text-decoration: underline; color: #1d3557; }
+.legal-section strong { color: #1d3557; }
+
+/* Tabla de cookies */
+.cookie-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+.cookie-table th {
+    background-color: #1d3557;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+}
+.cookie-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eaeaea;
+    color: #555;
+}
+.cookie-table tr:nth-child(even) td { background-color: #f8f9fa; }
+
+/* Caja de nota/aviso */
+.legal-notice {
+    background-color: #f1faee;
+    border: 1px solid #a8dadc;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #1d3557;
+}
+.legal-notice i { color: #a8dadc; margin-right: 8px; }
+
+/* Botón de volver */
+.legal-back {
+    text-align: center;
+    margin: 40px 0 60px;
+}
+.legal-back a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(29,53,87,0.2);
+}
+.legal-back a:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(29,53,87,0.3); }
+
+/* WhatsApp flotante */
+.whatsapp-fijo {
+    position: fixed; bottom: 30px; right: 30px;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: white; padding: 15px 22px; border-radius: 50px;
+    text-decoration: none; font-size: 1.1rem; font-weight: 600;
+    box-shadow: 0 8px 25px rgba(37,211,102,0.4); transition: all 0.3s ease;
+    z-index: 999; display: flex; align-items: center; gap: 10px;
+}
+.whatsapp-fijo:hover { transform: scale(1.1); }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .legal-hero h1 { font-size: 2rem; }
+    .legal-section { padding: 25px 18px; }
+    .legal-hero { padding: 80px 15px 50px; }
+    .cookie-table { font-size: 0.85rem; }
+    .cookie-table th, .cookie-table td { padding: 8px 10px; }
+}

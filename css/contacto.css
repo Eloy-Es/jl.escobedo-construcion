@@ -1,0 +1,594 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #a8dadc;
+    --highlight-color: #e63946;
+    --light-color: #f1faee;
+    --dark-color: #333;
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+    --radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: var(--dark-color);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    position: relative;
+}
+
+.center-title {
+    text-align: center;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.contact-hero-new {
+    background: linear-gradient(135deg, #1d3557 0%, #2a4a6e 60%, #457b9d 100%);
+    padding: 90px 0 80px;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-left { flex: 1; min-width: 0; }
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(168, 218, 220, 0.15);
+    border: 1px solid rgba(168, 218, 220, 0.35);
+    color: #a8dadc;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+.hero-main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    color: #f1faee;
+}
+
+.hero-accent { color: #a8dadc; }
+
+.hero-desc {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    margin-bottom: 32px;
+    max-width: 440px;
+    line-height: 1.7;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.hero-btn.primary { background: #e63946; color: white; }
+.hero-btn.primary:hover { background: #c1121f; transform: translateY(-3px); box-shadow: 0 8px 20px rgba(230,57,70,0.4); }
+.hero-btn.whatsapp { background: #25d366; color: white; }
+.hero-btn.whatsapp:hover { background: #128c7e; transform: translateY(-3px); box-shadow: 0 8px 20px rgba(37,211,102,0.4); }
+
+.hero-trust-badges {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.trust-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.68);
+}
+
+.trust-badge i { color: #a8dadc; }
+
+.hero-right {
+    flex: 0 0 44%;
+}
+
+.hero-image-wrap { position: relative; }
+
+.hero-image-wrap img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    display: block;
+}
+
+.hero-stat-badge {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background: white;
+    padding: 18px 22px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+    min-width: 130px;
+}
+
+.stat-num {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1d3557;
+    line-height: 1.1;
+}
+
+.stat-lbl {
+    font-size: 0.75rem;
+    color: #457b9d;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+/* =========================
+   CONTACT INFO SECTION
+========================= */
+.contact-info-section {
+    padding: 80px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-top: 4px solid var(--accent-color);
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact-detail {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 8px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.contact-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-button.whatsapp {
+    background-color: #25d366;
+}
+
+.contact-button.whatsapp:hover {
+    background-color: #128c7e;
+}
+
+.service-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.area-tag {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.specialization-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.specialization-list li {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.specialization-list li i {
+    color: var(--accent-color);
+}
+
+/* =========================
+   CONTACT FORM SECTION
+========================= */
+.contact-form-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-title {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.form-subtitle {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.05rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-button {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.submit-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.form-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* =========================
+   WHY CHOOSE US SECTION
+========================= */
+.why-choose-section {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.benefit-title {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.benefit-text {
+    color: var(--secondary-color);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+.whatsapp-fijo {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: white;
+    padding: 18px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-fijo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 992px) {
+    .hero-inner {
+        flex-direction: column;
+        padding: 0 30px;
+        gap: 50px;
+        text-align: center;
+    }
+    .hero-main-title { font-size: 2.8rem; }
+    .hero-desc { max-width: 100%; margin-left: auto; margin-right: auto; }
+    .hero-actions { justify-content: center; }
+    .hero-trust-badges { justify-content: center; }
+    .hero-right { flex: 0 0 auto; width: 100%; max-width: 500px; }
+    .hero-stat-badge { left: 15px; bottom: -15px; }
+}
+
+@media (max-width: 768px) {
+    .hero-main-title { font-size: 2.3rem; }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        padding: 30px 20px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .whatsapp-fijo {
+        bottom: 20px;
+        right: 20px;
+        padding: 15px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-hero-new { padding: 70px 0 55px; }
+    .hero-inner { padding: 0 20px; gap: 35px; }
+    .hero-main-title { font-size: 2rem; }
+    .hero-btn { padding: 12px 22px; font-size: 0.95rem; }
+    .hero-badge { font-size: 0.8rem; padding: 6px 14px; }
+    .hero-stat-badge { padding: 14px 16px; min-width: 110px; }
+    .stat-num { font-size: 1.5rem; }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 28px 18px;
+    }
+
+    .form-container {
+        padding: 25px 16px;
+    }
+
+    .contact-button {
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-main-title { font-size: 1.75rem; }
+    .hero-actions { gap: 10px; }
+    .hero-trust-badges { gap: 12px; }
+    .trust-badge { font-size: 0.8rem; }
+}

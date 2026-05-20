@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - JL.Escobedo Construcciones</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/servicios.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-contenido">
+                <a href="inicio.html" class="nav-logo">
+                    <div class="logo-icon"><i class="fas fa-hard-hat"></i></div>
+                    <div class="logo-texto">
+                        <span class="logo-nombre">JL.ESCOBEDO</span>
+                        <span class="logo-tagline">Construcciones</span>
+                    </div>
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="inicio.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quiensoy.html" class="nav-link"><i class="fas fa-user"></i> ¿Quién soy?</a>
+                    </li>
+                    <li class="nav-item has-dropdown active">
+                        <a href="servicios.html" class="nav-link"><i class="fas fa-tools"></i> Servicios <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios.html"><i class="fas fa-list-check"></i> Todos los Servicios</a></li>
+                            <li><a href="reformas.html"><i class="fas fa-home"></i> Reformas Integrales</a></li>
+                            <li><a href="servicios.html#albanileria"><i class="fas fa-trowel-bricks"></i> Albañilería</a></li>
+                            <li><a href="servicios.html#fontaneria"><i class="fas fa-wrench"></i> Fontanería</a></li>
+                            <li><a href="servicios.html#electricidad"><i class="fas fa-bolt"></i> Electricidad</a></li>
+                            <li><a href="servicios.html#mantenimiento"><i class="fas fa-shield-alt"></i> Mantenimiento</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reformas.html" class="nav-link"><i class="fas fa-hammer"></i> Reformas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a>
+                    </li>
+                </ul>
+                <div class="nav-mobile">
+                    <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MENÚ MÓVIL -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-contenido">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo"><i class="fas fa-hard-hat"></i><span>JL.ESCOBEDO</span></div>
+                <button class="menu-close" id="menuClose"><i class="fas fa-times"></i></button>
+            </div>
+            <ul class="mobile-nav">
+                <li><a href="inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="quiensoy.html"><i class="fas fa-user"></i> ¿Quién soy?</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle"><i class="fas fa-tools"></i> Servicios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-dropdown-menu">
+                        <li><a href="servicios.html"><i class="fas fa-list-check"></i> Todos los Servicios</a></li>
+                        <li><a href="reformas.html"><i class="fas fa-home"></i> Reformas Integrales</a></li>
+                        <li><a href="servicios.html#albanileria"><i class="fas fa-trowel-bricks"></i> Albañilería</a></li>
+                        <li><a href="servicios.html#fontaneria"><i class="fas fa-wrench"></i> Fontanería</a></li>
+                        <li><a href="servicios.html#electricidad"><i class="fas fa-bolt"></i> Electricidad</a></li>
+                        <li><a href="servicios.html#mantenimiento"><i class="fas fa-shield-alt"></i> Mantenimiento</a></li>
+                    </ul>
+                </li>
+                <li><a href="reformas.html"><i class="fas fa-hammer"></i> Reformas</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+            <div class="mobile-contact">
+                <a href="tel:641794832" class="mobile-phone"><i class="fas fa-phone-alt"></i><span class="phone-info"><span class="phone-label">Llamar</span><span class="phone-num">641 79 48 32</span></span></a>
+                <a href="https://wa.me/34641794832" class="mobile-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="mailto:Jose.luis-escobedo@hotmail.com" class="mobile-email"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= SECCIÓN COMPROMISO ================= -->
+    <div class="compromiso-container" style="margin-top: 70px;">
+        <div class="compromiso-contenido">
+            <div class="compromiso-texto">
+                <h3 class="compromiso-titulo">Objetivo:</h3>
+                <p class="compromiso-descripcion">
+                    Mejorar el aspecto y la funcionalidad de una vivienda o local comercial a medida
+                </p>
+                <p class="compromiso-compromiso">
+                    <strong>Nuestro compromiso es ofrecer y gestionar un servicio personalizado en la ejecución del proyecto de cada vivienda</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= BANNER DE SERVICIOS ================= -->
+    <div class="banner-servicios">
+        <div class="banner-contenido">
+            <h1 class="banner-titulo">Descubre Nuestros Servicios Especializados</h1>
+            <div class="banner-subtitulo">
+                <p>Soluciones integrales para transformar tus espacios con calidad y profesionalidad</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= CARRUSEL ================= -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="carrusel-contenido">
+                    <div class="carrusel-imagen">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&h=500&q=80" alt="Obras de construcción">
+                    </div>
+                    <div class="carrusel-texto">
+                        <h3>Servicios Integrales de Construcción</h3>
+                        <p>Ofrecemos soluciones completas para todo tipo de proyectos constructivos, desde pequeñas reformas hasta grandes obras.</p>
+                        <p>Nuestro equipo de profesionales garantiza calidad, cumplimiento de plazos y atención personalizada en cada proyecto.</p>
+                        <p>Con más de 25 años de experiencia en el sector, nos adaptamos a las necesidades específicas de cada cliente.</p>
+                        <p>Utilizamos materiales de primera calidad y seguimos los más altos estándares de seguridad en todas nuestras obras.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="carrusel-contenido">
+                    <div class="carrusel-imagen">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&h=500&q=80" alt="Reformas y renovaciones">
+                    </div>
+                    <div class="carrusel-texto">
+                        <h3>Reformas y Remodelaciones</h3>
+                        <p>Transformamos espacios para adaptarlos a tus necesidades y estilo de vida.</p>
+                        <p>Desde reformas integrales de viviendas hasta remodelaciones de locales comerciales.</p>
+                        <p>Gestionamos todos los permisos necesarios y coordinamos con los diferentes gremios involucrados.</p>
+                        <p>Te acompañamos en todo el proceso, desde el diseño inicial hasta la entrega final.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="carrusel-contenido">
+                    <div class="carrusel-imagen">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&h=500&q=80" alt="Reparación de casa">
+                    </div>
+                    <div class="carrusel-texto">
+                        <h3>Mantenimiento y Reparaciones</h3>
+                        <p>Servicio de mantenimiento preventivo y correctivo para todo tipo de edificaciones.</p>
+                        <p>Solucionamos problemas de humedades, grietas, filtraciones y desperfectos estructurales.</p>
+                        <p>Ofrecemos contratos de mantenimiento anual para comunidades y empresas.</p>
+                        <p>Intervención rápida en casos de urgencia.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <h2>Nuestros Servicios</h2>
+
+    <div class="bolas-servicios">
+
+        <div class="fila">
+            <div class="bola bola-click" onclick="abrirPanel('albanil')">
+                <span id="albanileria">Albañilería</span>
+            </div>
+
+            <div class="bola bola-click" onclick="abrirPanel('estructuras')">
+                <span>Estructuras</span>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="bola bola-click" onclick="abrirPanel('mantenimiento')">
+                <span id="mantenimiento">Mantenimiento</span>
+            </div>
+
+            <div class="bola bola-click" onclick="abrirPanel('colaboracion')">
+                <span>Colaboración</span>
+            </div>
+
+            <div class="bola bola-click" onclick="abrirPanel('fontaneria')">
+                <span id="fontaneria">Fontanería</span>
+            </div>
+        </div>
+
+        <!-- Fila adicional: Electricidad -->
+        <div class="fila">
+            <div class="bola bola-click" onclick="abrirPanel('electricidad')">
+                <span id="electricidad">Electricidad</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PANEL ALBAÑILERÍA -->
+    <div class="panel-overlay" id="panel-albanil">
+        <div class="panel-card">
+            <button class="panel-close" aria-label="Cerrar panel">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="panel-image">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&h=800&q=80" alt="Albañilería profesional">
+                <div class="panel-image-overlay">
+                    <i class="fas fa-trowel-bricks"></i>
+                    <h3>Albañilería</h3>
+                </div>
+            </div>
+            <div class="panel-content">
+                <h4>Obras y reformas en viviendas</h4>
+                <div class="panel-service-group">
+                    <h5><i class="fas fa-tools"></i> Servicios que ofrecemos</h5>
+                    <ul>
+                        <li>Levantamiento de muros y tabiques</li>
+                        <li>Enlucido de paredes (yeso, mortero, cemento)</li>
+                        <li>Colocación de suelos y alicatado de baños y cocinas</li>
+                        <li>Instalación de falsos techos</li>
+                        <li>Reparación de humedades o grietas</li>
+                        <li>Reforma integral de cocinas o baños</li>
+                    </ul>
+                </div>
+                <div class="panel-service-group">
+                    <h5><i class="fas fa-building"></i> Trabajos de estructura</h5>
+                    <ul>
+                        <li>Cimentaciones y soleras</li>
+                        <li>Construcción de muros de carga</li>
+                        <li>Encofrado y colocación de armaduras</li>
+                        <li>Trabajos con hormigón</li>
+                    </ul>
+                </div>
+                <a href="contacto.html#formulario" class="panel-cta-btn">
+                    <i class="fas fa-paper-plane"></i> Solicitar presupuesto
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANEL ESTRUCTURAS -->
+    <div class="panel-overlay" id="panel-estructuras">
+        <div class="panel-card">
+            <button class="panel-close" aria-label="Cerrar panel"><i class="fas fa-times"></i></button>
+            <div class="panel-image">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&h=800&q=80" alt="Trabajos estructurales">
+                <div class="panel-image-overlay">
+                    <i class="fas fa-building"></i>
+                    <h3>Estructuras</h3>
+                </div>
+            </div>
+            <div class="panel-content">
+                <h4>Trabajos estructurales específicos</h4>
+                <div class="panel-service-group">
+                    <h5><i class="fas fa-hard-hat"></i> Especialistas en</h5>
+                    <ul>
+                        <li>Cálculo estructural y diseño</li>
+                        <li>Cimentaciones profundas y superficiales</li>
+                        <li>Estructuras de hormigón armado</li>
+                        <li>Refuerzo de estructuras existentes</li>
+                        <li>Contención de tierras y muros de contención</li>
+                        <li>Control de calidad en obra</li>
+                    </ul>
+                </div>
+                <a href="contacto.html#formulario" class="panel-cta-btn"><i class="fas fa-paper-plane"></i> Solicitar presupuesto</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANEL MANTENIMIENTO -->
+    <div class="panel-overlay" id="panel-mantenimiento">
+        <div class="panel-card">
+            <button class="panel-close" aria-label="Cerrar panel"><i class="fas fa-times"></i></button>
+            <div class="panel-image">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&h=800&q=80" alt="Mantenimiento y reparaciones">
+                <div class="panel-image-overlay">
+                    <i class="fas fa-tools"></i>
+                    <h3>Mantenimiento</h3>
+                </div>
+            </div>
+            <div class="panel-content">
+                <h4>Mantenimiento y reparaciones</h4>
+                <div class="panel-service-group">
+                    <h5><i class="fas fa-wrench"></i> Reparaciones específicas</h5>
+                    <ul>
+                        <li>Reparación de desprendimientos o fisuras</li>
+                        <li>Sustitución de azulejos o piezas rotas</li>
+                        <li>Aislamientos térmicos o acústicos</li>
+                        <li>Reparaciones de tejados o cubiertas</li>
+                        <li>Reparaciones de fachadas</li>
+                        <li>Mantenimiento preventivo de edificios</li>
+                    </ul>
+                </div>
+                <a href="contacto.html#formulario" class="panel-cta-btn"><i class="fas fa-paper-plane"></i> Solicitar presupuesto</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANEL COLABORACIÓN -->
+    <div class="panel-overlay" id="panel-colaboracion">
+        <div class="panel-card">
+            <button class="panel-close" aria-label="Cerrar panel"><i class="fas fa-times"></i></button>
+            <div class="panel-image">
+                <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=600&h=800&q=80" alt="Colaboración con gremios">
+                <div class="panel-image-overlay">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Colaboración</h3>
+                </div>
+            </div>
+            <div class="panel-content">
+                <h4>Colaboración con otros gremios</h4>
+                <div class="panel-service-group">
+                    <h5><i class="fas fa-users"></i> Coordinación con profesionales</h5>
+                    <ul>
+                        <li>Trabajos coordinados con fontaneros</li>
+                        <li>Coordinación con electricistas</li>
+                        <li>Colaboración con pintores</li>
+                        <li>Trabajos con carpinteros</li>
+                        <li>Gestión integral de proyectos</li>
+                        <li>Supervisión multi-gremial</li>
+                    </ul>
+                </div>
+                <a href="contacto.html#formulario" class="panel-cta-btn"><i class="fas fa-paper-plane"></i> Solicitar presupuesto</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANEL FONTANERÍA -->
+    <div class="panel-overlay" id="panel-fontaneria">
+        <div class="panel-card">
+            <button class="panel-close" aria-label="Cerrar panel"><i class="fas fa-times"></i></button>
+            <div class="panel-image">
+                <img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=600&h=800&q=80" alt="Fontanero trabajando">
+                <div class="panel-image-overlay">
+                    <i class="fas fa-faucet"></i>
+                    <h3>Fontanería</h3>
+                </div>
+            </div>
+            <div class="panel-content">
+                <h4>Fontanero — Servicios completos</h4>
+                <div class="panel-service-group">
+                    <h5><i class="fas fa-wrench"></i> Instalaciones y reparaciones</h5>
+                    <ul>
+                        <li>Instalación de tuberías y grifos</li>
+                        <li>Reparación de fugas de agua o gas</li>
+                        <li>Mantenimiento de calderas y radiadores</li>
+                        <li>Instalación de sanitarios (lavabos, duchas, etc.)</li>
+                        <li>Presurización y bombas de agua</li>
+                        <li>Sistemas de drenaje y desagüe</li>
+                    </ul>
+                </div>
+                <a href="contacto.html#formulario" class="panel-cta-btn"><i class="fas fa-paper-plane"></i> Solicitar presupuesto</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANEL ELECTRICIDAD -->
+    <div class="panel-overlay" id="panel-electricidad">
+        <div class="panel-card">
+            <button class="panel-close" aria-label="Cerrar panel"><i class="fas fa-times"></i></button>
+            <div class="panel-image">
+                <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&h=800&q=80" alt="Instalaciones eléctricas">
+                <div class="panel-image-overlay">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Electricidad</h3>
+                </div>
+            </div>
+            <div class="panel-content">
+                <h4>Instalaciones eléctricas</h4>
+                <div class="panel-service-group">
+                    <h5><i class="fas fa-plug"></i> Servicios eléctricos</h5>
+                    <ul>
+                        <li>Instalación de cuadros eléctricos</li>
+                        <li>Renovación y reparación de instalaciones eléctricas</li>
+                        <li>Instalación de puntos de luz y enchufes</li>
+                        <li>Conexión de electrodomésticos</li>
+                        <li>Sistemas de iluminación LED</li>
+                        <li>Certificados y legalización</li>
+                    </ul>
+                </div>
+                <a href="contacto.html#formulario" class="panel-cta-btn"><i class="fas fa-paper-plane"></i> Solicitar presupuesto</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a class="whatsapp-fijo" href="https://wa.me/34641794832" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div class="footer-columna contacto">
+                <h3 class="footer-titulo">Contacto</h3>
+                <p><i class="fas fa-user"></i> Jose L. Escobedo</p>
+                <p><i class="fas fa-phone"></i> Tel: 641 79 48 32</p>
+                <p><i class="fas fa-envelope"></i> Jose.luis-escobedo@hotmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Tarragona - 43736</p>
+            </div>
+            <div class="footer-columna">
+                <h3 class="footer-titulo">Compañía</h3>
+                <ul>
+                    <li><a href="quiensoy.html"><i class="fas fa-chevron-right"></i> ¿Quién soy?</a></li>
+                    <li><a href="servicios.html"><i class="fas fa-chevron-right"></i> Servicios</a></li>
+                    <li><a href="reformas.html"><i class="fas fa-chevron-right"></i> Reformas</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-columna">
+                <h3 class="footer-titulo">Legal</h3>
+                <ul>
+                    <li><a href="politica-privacidad.html"><i class="fas fa-chevron-right"></i> Política de Privacidad</a></li>
+                    <li><a href="aviso-legal.html"><i class="fas fa-chevron-right"></i> Aviso Legal</a></li>
+                    <li><a href="politica-cookies.html"><i class="fas fa-chevron-right"></i> Política de Cookies</a></li>
+                    <li><a href="condiciones-uso.html"><i class="fas fa-chevron-right"></i> Condiciones de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-columna redes">
+                <h3 class="footer-titulo">Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-certifications">
+                    <p><i class="fas fa-award"></i> Profesional Certificado</p>
+                    <p><i class="fas fa-shield-alt"></i> Seguro de Responsabilidad Civil</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 JL.Escobedo Construcciones - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoHeight: true,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            effect: 'slide',
+            speed: 800
+        });
+
+        function abrirPanel(id) {
+            document.getElementById('panel-' + id).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        document.querySelectorAll('.panel-overlay').forEach(function(overlay) {
+            overlay.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+        document.querySelectorAll('.panel-close').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                this.closest('.panel-overlay').classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+    <script src="../js/navbar.js"></script>
+
+</body>
+</html>

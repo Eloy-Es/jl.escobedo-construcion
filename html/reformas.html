@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reformas - Transforma tu Espacio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/reformas.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-contenido">
+                <a href="inicio.html" class="nav-logo">
+                    <div class="logo-icon"><i class="fas fa-hard-hat"></i></div>
+                    <div class="logo-texto">
+                        <span class="logo-nombre">JL.ESCOBEDO</span>
+                        <span class="logo-tagline">Construcciones</span>
+                    </div>
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="inicio.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="quiensoy.html" class="nav-link"><i class="fas fa-user"></i> ¿Quién soy?</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link"><i class="fas fa-tools"></i> Servicios <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="servicios.html"><i class="fas fa-list-check"></i> Todos los Servicios</a></li>
+                            <li><a href="reformas.html"><i class="fas fa-home"></i> Reformas Integrales</a></li>
+                            <li><a href="servicios.html#albanileria"><i class="fas fa-trowel-bricks"></i> Albañilería</a></li>
+                            <li><a href="servicios.html#fontaneria"><i class="fas fa-wrench"></i> Fontanería</a></li>
+                            <li><a href="servicios.html#electricidad"><i class="fas fa-bolt"></i> Electricidad</a></li>
+                            <li><a href="servicios.html#mantenimiento"><i class="fas fa-shield-alt"></i> Mantenimiento</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="reformas.html" class="nav-link"><i class="fas fa-hammer"></i> Reformas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a>
+                    </li>
+                </ul>
+                <div class="nav-mobile">
+                    <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MENÚ MÓVIL -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="mobile-menu-contenido">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo"><i class="fas fa-hard-hat"></i><span>JL.ESCOBEDO</span></div>
+                <button class="menu-close" id="menuClose"><i class="fas fa-times"></i></button>
+            </div>
+            <ul class="mobile-nav">
+                <li><a href="inicio.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="quiensoy.html"><i class="fas fa-user"></i> ¿Quién soy?</a></li>
+                <li class="mobile-dropdown">
+                    <a href="#" class="mobile-dropdown-toggle"><i class="fas fa-tools"></i> Servicios <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-dropdown-menu">
+                        <li><a href="servicios.html"><i class="fas fa-list-check"></i> Todos los Servicios</a></li>
+                        <li><a href="reformas.html"><i class="fas fa-home"></i> Reformas Integrales</a></li>
+                        <li><a href="servicios.html#albanileria"><i class="fas fa-trowel-bricks"></i> Albañilería</a></li>
+                        <li><a href="servicios.html#fontaneria"><i class="fas fa-wrench"></i> Fontanería</a></li>
+                        <li><a href="servicios.html#electricidad"><i class="fas fa-bolt"></i> Electricidad</a></li>
+                        <li><a href="servicios.html#mantenimiento"><i class="fas fa-shield-alt"></i> Mantenimiento</a></li>
+                    </ul>
+                </li>
+                <li><a href="reformas.html"><i class="fas fa-hammer"></i> Reformas</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+            <div class="mobile-contact">
+                <a href="tel:641794832" class="mobile-phone"><i class="fas fa-phone-alt"></i><span class="phone-info"><span class="phone-label">Llamar</span><span class="phone-num">641 79 48 32</span></span></a>
+                <a href="https://wa.me/34641794832" class="mobile-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="mailto:Jose.luis-escobedo@hotmail.com" class="mobile-email"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </div>
+    </div>
+
+<!-- ================= BANNER DE REFORMAS ================= -->
+<div class="banner-reformas" style="margin-top: 70px;">
+    <div class="banner-contenido">
+        <h1 class="banner-titulo">Reformas a tu Medida</h1>
+        <div class="banner-subtitulo">
+            <p>Transformamos cocinas, baños y cualquier espacio de tu hogar con diferentes niveles de calidad</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================= SECCIÓN COMPROMISO ================= -->
+<div class="compromiso-container">
+    <div class="compromiso-contenido">
+        <div class="compromiso-texto">
+            <h3 class="compromiso-titulo">Nuestro Enfoque:</h3>
+            <p class="compromiso-descripcion">
+                Trabajamos como albañil, fontanero y electricista para ofrecerte un servicio completo y coordinado
+            </p>
+            <p class="compromiso-compromiso">
+                <strong>Desde pequeños arreglos hasta reformas integrales, adaptándonos a tu presupuesto y necesidades</strong>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- ================= SELECTOR DE TIPO DE REFORMA ================= -->
+<h2>¿Qué espacio quieres transformar?</h2>
+
+<div class="selector-reformas">
+    <div class="botones-reforma">
+        <button class="boton-reforma active" data-tipo="cocina">
+            <i class="fas fa-utensils"></i>
+            <span>Cocina</span>
+        </button>
+        <button class="boton-reforma" data-tipo="bano">
+            <i class="fas fa-bath"></i>
+            <span>Baño</span>
+        </button>
+        <button class="boton-reforma" data-tipo="integral">
+            <i class="fas fa-home"></i>
+            <span>Reforma Integral</span>
+        </button>
+        <button class="boton-reforma" data-tipo="instalaciones">
+            <i class="fas fa-bolt"></i>
+            <span>Instalaciones</span>
+        </button>
+    </div>
+
+    <div class="contenido-reforma" id="contenido-cocina">
+        <div class="descripcion-reforma">
+            <h3>Reforma de Cocina</h3>
+            <p>Transformamos tu cocina en un espacio funcional y moderno. Trabajamos todos los aspectos: albañilería, instalación eléctrica, fontanería y acabados.</p>
+            <div class="servicios-incluidos">
+                <h4>Servicios incluidos:</h4>
+                <ul>
+                    <li><i class="fas fa-check"></i> Demolición y preparación del espacio</li>
+                    <li><i class="fas fa-check"></i> Instalación eléctrica completa</li>
+                    <li><i class="fas fa-check"></i> Fontanería y desagües</li>
+                    <li><i class="fas fa-check"></i> Colocación de azulejos y suelos</li>
+                    <li><i class="fas fa-check"></i> Montaje de muebles y encimera</li>
+                    <li><i class="fas fa-check"></i> Instalación de electrodomésticos</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="niveles-calidad">
+            <h3>Niveles de Calidad Disponibles</h3>
+            <div class="niveles-grid">
+                <div class="nivel-card economico">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-euro-sign"></i> Económico</h4>
+                        <span class="nivel-precio">Desde 3.500€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Muebles laminado estándar</li>
+                            <li>Encimera de aglomerado</li>
+                            <li>Electrodomésticos básicos</li>
+                            <li>Azulejos estándar</li>
+                            <li>Grifería económica</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 2-3 semanas
+                    </div>
+                </div>
+                
+                <div class="nivel-card media">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-star"></i> Media</h4>
+                        <span class="nivel-precio">Desde 6.500€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Muebles de melamina alta densidad</li>
+                            <li>Encimera de cuarzo</li>
+                            <li>Electrodomésticos eficientes A++</li>
+                            <li>Azulejos porcelánico</li>
+                            <li>Grifería termostática</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 3-4 semanas
+                    </div>
+                </div>
+                
+                <div class="nivel-card premium">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-crown"></i> Premium</h4>
+                        <span class="nivel-precio">Desde 12.000€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Muebles lacados o madera maciza</li>
+                            <li>Encimera de granito o Neolith</li>
+                            <li>Electrodomésticos gama alta</li>
+                            <li>Azulejos de diseño</li>
+                            <li>Grifería profesional</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 4-6 semanas
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenido-reforma" id="contenido-bano" style="display: none;">
+        <div class="descripcion-reforma">
+            <h3>Reforma de Baño</h3>
+            <p>Creación de baños modernos y funcionales con especial atención a la impermeabilización y sistemas de desagüe.</p>
+            <div class="servicios-incluidos">
+                <h4>Servicios incluidos:</h4>
+                <ul>
+                    <li><i class="fas fa-check"></i> Demolición y saneamiento</li>
+                    <li><i class="fas fa-check"></i> Impermeabilización integral</li>
+                    <li><i class="fas fa-check"></i> Instalación fontanería completa</li>
+                    <li><i class="fas fa-check"></i> Electricidad y puntos de luz</li>
+                    <li><i class="fas fa-check"></i> Colocación de sanitarios</li>
+                    <li><i class="fas fa-check"></i> Alicatado y solado</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="niveles-calidad">
+            <h3>Niveles de Calidad Disponibles</h3>
+            <div class="niveles-grid">
+                <div class="nivel-card economico">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-euro-sign"></i> Económico</h4>
+                        <span class="nivel-precio">Desde 2.800€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Sanitarios estándar</li>
+                            <li>Azulejos básicos</li>
+                            <li>Plato de ducha acrílico</li>
+                            <li>Mampara económica</li>
+                            <li>Grifería simple</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 2 semanas
+                    </div>
+                </div>
+                
+                <div class="nivel-card media">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-star"></i> Media</h4>
+                        <span class="nivel-precio">Desde 4.500€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Sanitarios de diseño</li>
+                            <li>Azulejos porcelánico</li>
+                            <li>Plato de ducha de resina</li>
+                            <li>Mampara corredera</li>
+                            <li>Grifería termostática</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 2-3 semanas
+                    </div>
+                </div>
+                
+                <div class="nivel-card premium">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-crown"></i> Premium</h4>
+                        <span class="nivel-precio">Desde 8.000€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Sanitarios suspendidos</li>
+                            <li>Azulejos gran formato</li>
+                            <li>Suelo radiante</li>
+                            <li>Mobiliario a medida</li>
+                            <li>Grifería táctil</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 3-4 semanas
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenido-reforma" id="contenido-integral" style="display: none;">
+        <div class="descripcion-reforma">
+            <h3>Reforma Integral</h3>
+            <p>Transformación completa de viviendas, pisos o locales. Gestión integral desde el diseño hasta los acabados finales.</p>
+            <div class="servicios-incluidos">
+                <h4>Servicios incluidos:</h4>
+                <ul>
+                    <li><i class="fas fa-check"></i> Proyecto y diseño</li>
+                    <li><i class="fas fa-check"></i> Demolición y redistribución</li>
+                    <li><i class="fas fa-check"></i> Instalaciones completas (agua, luz, climatización)</li>
+                    <li><i class="fas fa-check"></i> Carpintería y mobiliario</li>
+                    <li><i class="fas fa-check"></i> Acabados y pintura</li>
+                    <li><i class="fas fa-check"></i> Coordinación con todos los gremios</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="niveles-calidad">
+            <h3>Niveles de Calidad Disponibles</h3>
+            <div class="niveles-grid">
+                <div class="nivel-card economico">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-euro-sign"></i> Económico</h4>
+                        <span class="nivel-precio">Desde 15.000€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Suelos laminados</li>
+                            <li>Puertas estándar</li>
+                            <li>Carpintería básica</li>
+                            <li>Pintura plástica</li>
+                            <li>Iluminación sencilla</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 6-8 semanas
+                    </div>
+                </div>
+                
+                <div class="nivel-card media">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-star"></i> Media</h4>
+                        <span class="nivel-precio">Desde 25.000€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Suelos porcelánico</li>
+                            <li>Puertas lacadas</li>
+                            <li>Carpintería a medida</li>
+                            <li>Pintura lavable</li>
+                            <li>Sistema iluminación LED</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 8-12 semanas
+                    </div>
+                </div>
+                
+                <div class="nivel-card premium">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-crown"></i> Premium</h4>
+                        <span class="nivel-precio">Desde 45.000€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Suelos de madera natural</li>
+                            <li>Puertas de diseño</li>
+                            <li>Carpintería exclusiva</li>
+                            <li>Pintura ecológica</li>
+                            <li>Domótica básica</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 12-16 semanas
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenido-reforma" id="contenido-instalaciones" style="display: none;">
+        <div class="descripcion-reforma">
+            <h3>Instalaciones</h3>
+            <p>Actualización y mejora de todas las instalaciones de tu hogar: eléctrica, fontanería, calefacción y climatización.</p>
+            <div class="servicios-incluidos">
+                <h4>Servicios incluidos:</h4>
+                <ul>
+                    <li><i class="fas fa-check"></i> Instalación eléctrica nueva</li>
+                    <li><i class="fas fa-check"></i> Fontanería completa</li>
+                    <li><i class="fas fa-check"></i> Sistema de calefacción</li>
+                    <li><i class="fas fa-check"></i> Climatización y aire acondicionado</li>
+                    <li><i class="fas fa-check"></i> Ventilación mecánica</li>
+                    <li><i class="fas fa-check"></i> Certificados y legalización</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="niveles-calidad">
+            <h3>Niveles de Calidad Disponibles</h3>
+            <div class="niveles-grid">
+                <div class="nivel-card economico">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-euro-sign"></i> Económico</h4>
+                        <span class="nivel-precio">Desde 2.000€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Cuadro eléctrico básico</li>
+                            <li>Tuberías PVC</li>
+                            <li>Caldera estándar</li>
+                            <li>Aire acondicionado split</li>
+                            <li>Termostato manual</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 1-2 semanas
+                    </div>
+                </div>
+                
+                <div class="nivel-card media">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-star"></i> Media</h4>
+                        <span class="nivel-precio">Desde 4.000€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Cuadro eléctrico con diferenciales</li>
+                            <li>Tuberías multicapa</li>
+                            <li>Caldera condensación</li>
+                            <li>Aire acondicionado inverter</li>
+                            <li>Termostato programable</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 2-3 semanas
+                    </div>
+                </div>
+                
+                <div class="nivel-card premium">
+                    <div class="nivel-header">
+                        <h4><i class="fas fa-crown"></i> Premium</h4>
+                        <span class="nivel-precio">Desde 8.000€</span>
+                    </div>
+                    <div class="nivel-materiales">
+                        <h5>Materiales:</h5>
+                        <ul>
+                            <li>Cuadro eléctrico domótico</li>
+                            <li>Tuberías cobre</li>
+                            <li>Caldera de baja temperatura</li>
+                            <li>Aire acondicionado conductos</li>
+                            <li>Termostato inteligente</li>
+                        </ul>
+                    </div>
+                    <div class="nivel-tiempo">
+                        <i class="fas fa-clock"></i> 3-4 semanas
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= CTA FINAL ================= -->
+<div class="cta-final">
+    <div class="cta-contenido">
+        <h3>¿Te interesa alguna de estas reformas?</h3>
+        <p>Contacta con nosotros para un presupuesto personalizado sin compromiso</p>
+        <a href="contacto.html#formulario" class="btn-cta">Solicitar Presupuesto <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+<!-- ================= WHATSAPP BUTTON ================= -->
+<a class="whatsapp-fijo" href="https://wa.me/34641794832" target="_blank" aria-label="Contactar por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span>WhatsApp</span>
+</a>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-contenido">
+        <div class="footer-columna contacto">
+            <h3 class="footer-titulo">Contacto</h3>
+            <p><i class="fas fa-user"></i> Jose L. Escobedo</p>
+            <p><i class="fas fa-phone"></i> Tel: 641 79 48 32</p>
+            <p><i class="fas fa-envelope"></i> Jose.luis-escobedo@hotmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Tarragona - 43736</p>
+        </div>
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Compañía</h3>
+            <ul>
+                <li><a href="quiensoy.html"><i class="fas fa-chevron-right"></i> ¿Quién soy?</a></li>
+                <li><a href="servicios.html"><i class="fas fa-chevron-right"></i> Servicios</a></li>
+                <li><a href="reformas.html"><i class="fas fa-chevron-right"></i> Reformas</a></li>
+                <li><a href="contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-columna">
+            <h3 class="footer-titulo">Legal</h3>
+            <ul>
+                <li><a href="politica-privacidad.html"><i class="fas fa-chevron-right"></i> Política de Privacidad</a></li>
+                <li><a href="aviso-legal.html"><i class="fas fa-chevron-right"></i> Aviso Legal</a></li>
+                <li><a href="politica-cookies.html"><i class="fas fa-chevron-right"></i> Política de Cookies</a></li>
+                <li><a href="condiciones-uso.html"><i class="fas fa-chevron-right"></i> Condiciones de Uso</a></li>
+            </ul>
+        </div>
+        <div class="footer-columna redes">
+            <h3 class="footer-titulo">Síguenos</h3>
+            <div class="redes-sociales">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-certifications">
+                <p><i class="fas fa-award"></i> Profesional Certificado</p>
+                <p><i class="fas fa-shield-alt"></i> Seguro de Responsabilidad Civil</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2026 JL.Escobedo Construcciones - Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="../js/reformas.js"></script>
+<script src="../js/navbar.js"></script>
+</body>
+</html>
