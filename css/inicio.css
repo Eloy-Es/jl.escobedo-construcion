@@ -328,12 +328,13 @@ body {
 }
 
 @media (max-width: 768px) {
-    .hero-section { height: 70vh; min-height: 500px; margin-top: 60px; }
-    .hero-title { font-size: 2.5rem; }
-    .hero-subtitle { font-size: 1.2rem; }
-    .hero-stats { gap: 20px; }
-    .stat-item { min-width: 120px; padding: 15px; }
-    .stat-number { font-size: 2.2rem; }
+    .hero-section { height: 70vh; min-height: 520px; margin-top: 60px; }
+    .hero-title { font-size: 2.2rem; }
+    .hero-subtitle { font-size: 1.1rem; margin-bottom: 25px; }
+    .hero-stats { gap: 12px; margin: 25px 0; flex-wrap: nowrap; }
+    .stat-item { flex: 1; min-width: 0; padding: 12px 8px; }
+    .stat-number { font-size: 1.8rem; }
+    .stat-text { font-size: 0.78rem; }
     .hero-buttons, .cta-buttons { flex-direction: column; align-items: center; }
     .btn-hero { width: 100%; max-width: 260px; padding: 14px 24px; font-size: 1.05rem; min-width: 0; }
     .cta-button { width: 100%; max-width: 300px; }
@@ -345,11 +346,17 @@ body {
 }
 
 @media (max-width: 576px) {
-    .hero-section { height: 60vh; min-height: 400px; }
-    .hero-title { font-size: 2rem; }
-    .hero-subtitle { font-size: 1rem; }
-    .hero-stats { flex-direction: column; gap: 15px; }
-    .stat-item { width: 100%; max-width: 200px; }
+    /* height: auto es la clave — el contenido nunca se sale del hero */
+    .hero-section { height: auto; min-height: 0; padding: 100px 0 45px; }
+    .hero-content { padding: 0 18px; }
+    .hero-title { font-size: 1.65rem; line-height: 1.25; margin-bottom: 12px; }
+    .hero-subtitle { font-size: 0.95rem; margin-bottom: 18px; }
+    .hero-stats { gap: 8px; margin: 18px 0; flex-wrap: nowrap; }
+    .stat-item { flex: 1; min-width: 0; padding: 10px 6px; }
+    .stat-number { font-size: 1.5rem; }
+    .stat-text { font-size: 0.68rem; }
+    .hero-buttons { gap: 10px; margin-top: 5px; }
+    .btn-hero { padding: 12px 20px; font-size: 0.95rem; max-width: 230px; }
     .section-title { font-size: 1.8rem; }
     .cta-title { font-size: 2rem; }
     .cta-text { font-size: 1.1rem; }
@@ -357,7 +364,6 @@ body {
     .compromiso-descripcion { font-size: 1.1rem; }
     .compromiso-compromiso { font-size: 1rem; }
     .service-areas { justify-content: center; }
-    .btn-hero { padding: 13px 22px; font-size: 1rem; max-width: 240px; }
     .contact-info-rapida { gap: 15px; }
     .contact-item { min-width: 100%; flex: 1 1 100%; }
     .servicios-grid { gap: 20px; }
