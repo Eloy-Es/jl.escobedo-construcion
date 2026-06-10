@@ -114,7 +114,7 @@
     </div>
 
     <!-- ================= CARRUSEL ================= -->
-    <div class="swiper-container">
+    <div class="swiper">
         <div class="swiper-wrapper">
 
             <!-- Slide 1 -->
@@ -170,6 +170,7 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>
+
 
     <h2>Nuestros Servicios</h2>
 
@@ -450,7 +451,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
+        const swiper = new Swiper('.swiper', {
             loop: true,
             pagination: { el: '.swiper-pagination', clickable: true },
             navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },

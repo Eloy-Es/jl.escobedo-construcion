@@ -34,6 +34,7 @@ body {
 .footer-titulo {
     font-size: 1.1em;
     font-weight: bold;
+    margin-top: 0;
     margin-bottom: 15px;
     color: #00bcd4; /* Color de acento para los títulos */
     border-bottom: 2px solid #00bcd4; /* Subrayado similar al de la imagen */
