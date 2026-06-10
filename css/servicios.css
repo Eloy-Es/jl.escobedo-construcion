@@ -142,9 +142,9 @@ p {
 ========================= */
 .swiper-container {
     width: 100%;
-    height: auto;
     margin-bottom: 40px;
     position: relative;
+    padding-bottom: 55px;
 }
 
 .swiper-wrapper {
@@ -159,6 +159,7 @@ p {
 
 .carrusel-contenido {
     display: flex;
+    flex: 1;
     min-height: 380px;
     gap: 30px;
     padding: 25px;
@@ -215,7 +216,12 @@ p {
     border-radius: 50%;
     box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
+    top: auto;
+    bottom: 8px;
 }
+
+.swiper-button-prev { left: 20px; }
+.swiper-button-next { right: 20px; }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
@@ -230,11 +236,15 @@ p {
     font-weight: bold;
 }
 
+.swiper-pagination {
+    bottom: 18px;
+}
+
 .swiper-pagination-bullet {
     background: #1d3557;
     opacity: 0.5;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
 }
 
 .swiper-pagination-bullet-active {
@@ -868,6 +878,20 @@ p {
     }
 }
 
+@media (max-width: 600px) {
+    /* 2-2-2: las filas se disuelven y las bolas van al grid del padre */
+    .bolas-servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .fila {
+        display: contents;
+    }
+}
+
 @media (max-width: 480px) {
     .bola {
         width: 140px;
@@ -881,11 +905,6 @@ p {
 
     .bola-click::after {
         display: none;
-    }
-
-    .fila {
-        gap: 18px;
-        margin-bottom: 40px;
     }
 
     h2 {

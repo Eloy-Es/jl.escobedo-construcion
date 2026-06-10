@@ -55,7 +55,11 @@ body {
 .footer-columna ul li a {
     color: #cccccc;
     text-decoration: none;
+    font-size: 0.95rem;
     transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .footer-columna ul li a:hover {
@@ -67,6 +71,10 @@ body {
 .footer-columna.contacto p {
     margin: 5px 0;
     color: #cccccc;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Estilos para Redes Sociales */
