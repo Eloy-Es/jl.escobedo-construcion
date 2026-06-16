@@ -78,6 +78,22 @@ body {
     gap: 10px;
 }
 
+/* Estilos para columna de Garantías */
+.footer-certifications p {
+    margin: 7px 0;
+    color: #cccccc;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-certifications p i {
+    color: #00bcd4;
+    width: 16px;
+    text-align: center;
+}
+
 /* Estilos para Redes Sociales */
 .redes-sociales {
     display: flex;
@@ -118,7 +134,7 @@ body {
 }
 
 /* --- RESPONSIVE DESIGN --- */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .footer-contenido {
         justify-content: flex-start;
     }

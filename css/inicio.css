@@ -106,7 +106,7 @@ body {
 
 /* HERO SECTION */
 .hero-section {
-    position: relative; height: 80vh; min-height: 600px; margin-bottom: 80px; margin-top: 70px;
+    position: relative; height: 80vh; min-height: 600px; margin-bottom: 80px; margin-top: 129px;
     background: linear-gradient(rgba(29, 53, 87, 0.8), rgba(29, 53, 87, 0.9)),
                 url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
     background-size: cover; background-position: center;
@@ -322,7 +322,7 @@ body {
     .nav-menu { display: none; }
     .nav-mobile { display: block; }
     .nav-contenido { padding: 12px 0; }
-    .hero-section { margin-top: 70px; }
+    .hero-section { margin-top: 120px; }
     .hero-buttons { flex-wrap: wrap; justify-content: center; gap: 15px; }
     .btn-hero { min-width: 160px; }
 }

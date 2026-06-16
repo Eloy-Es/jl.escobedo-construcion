@@ -24,11 +24,12 @@
 }
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-.nav-contenido { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+.nav-contenido { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; }
 
 /* Logo */
 .nav-logo { display: flex; align-items: center; text-decoration: none; gap: 15px; }
-.logo-icon { font-size: 2.5rem; color: var(--primary-color); }
+.logo-icon { display: flex; align-items: center; }
+.nav-logo-img { height: 115px; width: 115px; object-fit: contain; border-radius: 8px; }
 .logo-texto { display: flex; flex-direction: column; }
 .logo-nombre { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); line-height: 1.2; }
 .logo-tagline { font-size: 0.9rem; color: var(--secondary-color); font-weight: 500; }
@@ -136,6 +137,7 @@
 
 /* Tamaños fijos del navbar — igual en todas las páginas */
 .navbar .logo-icon { font-size: 2.5rem; }
+.navbar .nav-logo-img { height: 115px; width: 115px; }
 .navbar .logo-nombre { font-size: 1.5rem; font-weight: 700; line-height: 1.2; }
 .navbar .logo-tagline { font-size: 0.9rem; }
 .navbar .menu-toggle { font-size: 1.8rem; }
@@ -145,13 +147,15 @@
 @media (max-width: 992px) {
     .nav-menu { display: none; }
     .nav-mobile { display: block; }
-    .nav-contenido { padding: 12px 0; }
+    .nav-contenido { padding: 10px 0; }
+    .navbar .nav-logo-img { height: 100px; width: 100px; }
 }
 
 @media (max-width: 576px) {
     .logo-nombre { font-size: 1.25rem; }
     .logo-tagline { font-size: 0.8rem; }
     .logo-icon { font-size: 2rem; }
+    .navbar .nav-logo-img { height: 90px; width: 90px; }
     .nav-logo { gap: 10px; }
     .container { padding: 0 15px; }
     .mobile-menu-contenido { width: 290px; padding: 25px 20px; }
